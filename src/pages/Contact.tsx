@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// import { Analytics } from "@vercel/analytics/next"
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     email: "",

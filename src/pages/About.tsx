@@ -1,5 +1,5 @@
 import React from "react";
-
+// import { Analytics } from "@vercel/analytics/next"
 const About: React.FC = () => {
   return (
     <section className="bg-white dark:bg-gray-900">

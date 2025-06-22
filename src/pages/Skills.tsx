@@ -1,4 +1,5 @@
 import React from "react";
+// import { Analytics } from "@vercel/analytics/next"
 import { softSkills, technicalSkills } from "./../Database/skillsData";
 
 const Skills: React.FC = () => {

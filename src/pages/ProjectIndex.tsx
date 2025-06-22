@@ -1,4 +1,5 @@
 import React from "react";
+// import { Analytics } from "@vercel/analytics/next"
 import Project_Card from "../components/Project_Card";
 // import { portfolioData } from "./Database/projectData";
 import { portfolioData } from './../Database/projectData';
