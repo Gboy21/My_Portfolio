@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   return (
     <>
       {/* Sidebar receives state and toggle handler */}
-      <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+    <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} mode="mobile" />
 
       <header>
         <nav className="bg-white w-full z-50 flex justify-between items-center border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">

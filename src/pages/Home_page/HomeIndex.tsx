@@ -60,10 +60,12 @@ const HeroSection: React.FC = () => {
         {/* Responsive Image Section */}
         <div className="col-span-full mt-8 flex justify-center lg:col-span-5 lg:mt-0 lg:justify-end">
           <img
-            src="/images/projects/me.jpg"
-            alt="My image"
-            className="h-auto max-w-full rounded-lg shadow-lg"
-          />
+  src="/images/projects/me.jpg"
+  alt="My image"
+  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-lg shadow-lg border border-transparent hover:border-blue-600 hover:shadow-blue-500 hover:shadow-md hover:scale-105 transition-all duration-300"
+/>
+
+
         </div>
       </div>
     </section>

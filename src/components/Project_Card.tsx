@@ -9,7 +9,7 @@ interface ProjectProps {
 
 const Project_Card: React.FC<ProjectProps> = ({ image, title, description, link }) => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="transform transition duration-300 hover:scale-105 hover:shadow-xl hover:border-blue-500 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <a href={link}>
         <img className="rounded-t-lg w-full h-auto object-cover" src={image} alt={title} />
       </a>
@@ -47,5 +47,7 @@ const Project_Card: React.FC<ProjectProps> = ({ image, title, description, link 
     </div>
   );
 };
+
+
 
 export default Project_Card;
