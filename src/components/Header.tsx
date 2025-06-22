@@ -20,7 +20,7 @@ const Header: React.FC = () => {
       <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
 
       <header>
-        <nav className="bg-white fixed top-0 left-0 w-full z-50 flex justify-between items-center border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <nav className="bg-white w-full z-50 flex justify-between items-center border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
           {/* Left: Logo and Hamburger */}
           <div className="flex items-center space-x-4">
             {/* Hamburger Icon (mobile only) */}
