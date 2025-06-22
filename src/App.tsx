@@ -7,7 +7,9 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import ProjectIndex from "./pages/ProjectIndex";
-import Sidebar from "./components/Sidebar";
+
+// import Sidebar from "./components/Sidebar";
+
 // import { Sidebar } from "flowbite-react";
 
 const App: React.FC = () => {
