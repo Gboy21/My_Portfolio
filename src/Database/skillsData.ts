@@ -1,4 +1,3 @@
-
 import {
   FaMicrosoft,
   FaShieldAlt,
@@ -12,8 +11,15 @@ import {
   FaChalkboardTeacher,
   FaClock,
 } from "react-icons/fa";
+import { IconType } from "react-icons";
 
-export const technicalSkills = [
+export type SkillItem = {
+  name: string;
+  icon: IconType;
+  level?: number; // Optional for soft skills
+};
+
+export const technicalSkills: SkillItem[] = [
   { name: "Microsoft 365 Administration", icon: FaMicrosoft, level: 85 },
   { name: "Cybersecurity & Fraud Prevention", icon: FaShieldAlt, level: 90 },
   { name: "Python, React, Java (Servlets + JSP)", icon: FaPython, level: 80 },
@@ -22,17 +28,10 @@ export const technicalSkills = [
   { name: "Automation & Process Optimization", icon: FaCogs, level: 78 },
 ];
 
-export const softSkills = [
+export const softSkills: SkillItem[] = [
   { name: "Accuracy-Oriented", icon: FaHandshake },
   { name: "Cross-Functional Collaboration", icon: FaUsers },
   { name: "Bilingual Communication", icon: FaLanguage },
   { name: "Technical Training", icon: FaChalkboardTeacher },
   { name: "Time Management", icon: FaClock },
 ];
-
-
-// function App() {
-//   return <Skills technicalSkills={technicalSkills} softSkills={softSkills} />;
-// }
-
-// export default App;

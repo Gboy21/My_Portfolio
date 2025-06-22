@@ -1,55 +1,7 @@
 import React from "react";
-import "flowbite";
-import { IconType } from "react-icons";
+import { softSkills, technicalSkills } from "./../Database/skillsData";
 
-// import Skills from './Skills';
-type SkillItem = {
-  name: string;
-  icon: IconType;
-  level?: number; // For technical skills with progress bar
-};
-
-interface SkillsProps {
-  technicalSkills: SkillItem[];
-  softSkills: SkillItem[];
-}
-
-import {
-  FaMicrosoft,
-  FaShieldAlt,
-  FaPython,
-  FaDatabase,
-  FaCode,
-  FaCogs,
-  FaHandshake,
-  FaUsers,
-  FaLanguage,
-  FaChalkboardTeacher,
-  FaClock,
-} from "react-icons/fa";
-
-const technicalSkills = [
-  { name: "Microsoft 365 Administration", icon: FaMicrosoft, level: 85 },
-  { name: "Cybersecurity & Fraud Prevention", icon: FaShieldAlt, level: 90 },
-  { name: "Python, React, Java (Servlets + JSP)", icon: FaPython, level: 80 },
-  { name: "SQL, PostgreSQL", icon: FaDatabase, level: 75 },
-  { name: "HTML/CSS/JavaScript", icon: FaCode, level: 85 },
-  { name: "Automation & Process Optimization", icon: FaCogs, level: 78 },
-];
-
-const softSkills = [
-  { name: "Accuracy-Oriented", icon: FaHandshake },
-  { name: "Cross-Functional Collaboration", icon: FaUsers },
-  { name: "Bilingual Communication", icon: FaLanguage },
-  { name: "Technical Training", icon: FaChalkboardTeacher },
-  { name: "Time Management", icon: FaClock },
-];
-
-
-const Skills: React.FC<SkillsProps> = () => {
-    // const [getSkillsData, setSkillsData] = useState(technicalSkills);
-    
-    
+const Skills: React.FC = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="py-12 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
@@ -62,7 +14,7 @@ const Skills: React.FC<SkillsProps> = () => {
           </p>
         </div>
 
-        {/* Technical Skills with Progress Bars */}
+        {/* Technical Skills */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Technical Skills</h3>
           <div className="space-y-6">
@@ -75,7 +27,7 @@ const Skills: React.FC<SkillsProps> = () => {
                 <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                   <div
                     className="bg-primary-600 h-2.5 rounded-full dark:bg-primary-500"
-                    // style={{ width: `${skill.level ?? 70}%` }}
+                    style={{ width: `${skill.level ?? 70}%` }}
                   ></div>
                 </div>
               </div>
