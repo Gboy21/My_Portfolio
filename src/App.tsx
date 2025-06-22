@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import ProjectIndex from "./pages/ProjectIndex";
+import Sidebar from "./components/Sidebar";
+// import { Sidebar } from "flowbite-react";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +20,8 @@ const App: React.FC = () => {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/project" element={<ProjectIndex />} />
+        <Route path="/sidebar" element={<Sidebar />} />
+        
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
       <FooterComponent />

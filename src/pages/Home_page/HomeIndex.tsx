@@ -4,6 +4,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+        {/* Text Section */}
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="mb-4 max-w-2xl text-3xl leading-tight font-extrabold tracking-tight md:text-4xl xl:text-5xl dark:text-white">
             Hi, I'm Muhire Gilbert
@@ -12,8 +13,9 @@ const HeroSection: React.FC = () => {
               — IT Solutions Specialist & Software Developer
             </span>
           </h1>
-{/* 
-          <p className="mb-6 max-w-2xl text-lg text-gray-700 dark:text-gray-300">
+
+          {/* Optional: About Paragraph */}
+          {/* <p className="mb-6 max-w-2xl text-lg text-gray-700 dark:text-gray-300">
             I'm a passionate Software Engineer dedicated to building secure, scalable, and impactful digital
             solutions. With hands-on experience in back-end and front-end development, I’ve contributed to
             systems that improve operational efficiency and user experience—especially in the financial and
@@ -32,6 +34,7 @@ const HeroSection: React.FC = () => {
             </p>
           </div>
 
+          {/* CTA Button */}
           <div className="flex flex-wrap">
             <a
               href="about"
@@ -54,8 +57,13 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">
-          <img src="/images/projects/me.jpg" alt="My image" />
+        {/* Responsive Image Section */}
+        <div className="col-span-full mt-8 flex justify-center lg:col-span-5 lg:mt-0 lg:justify-end">
+          <img
+            src="/images/projects/me.jpg"
+            alt="My image"
+            className="h-auto max-w-full rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
